@@ -1,11 +1,11 @@
 body {
-    background: #000000;
-    color: #fff;
+    background: #fff; /*white*/
+    color: #000; /*black*/
     font-family: Arial;
     font-size: 22px;
 }
 a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
 }
     a:visited {
@@ -15,14 +15,21 @@ a {
     a:focus {
         color: #94268c;
     }
-
+/***************Bootstrap Overides****************************************/
 .carousel-inner .item .images {
     width: 70%;
     margin: auto;
 }
 
-.carousel-caption {
+/*Removes gradient/shading behind the controls */
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    outline: 0;
+    opacity: 1;
+}
+
+/*.carousel-caption {
     opacity: 0.5;
     color: #fff;
     background: #000;
-}
+}*/
